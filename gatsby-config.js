@@ -52,6 +52,7 @@ module.exports = {
             }
         },
         `gatsby-plugin-sass`,
+        `gatsby-plugin-netlify`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-robots-txt`,
         `gatsby-plugin-sitemap`,

@@ -1,3 +1,11 @@
+const dotenv = require('dotenv');
+
+if (process.env.ENVIRONMENT !== 'production') {
+    dotenv.config();
+}
+
+const { SPACE_ID, ACCESS_TOKEN } = process.env;
+
 module.exports = {
     siteMetadata: {
         siteUrl: `https://mharmony.io`,
@@ -15,7 +23,15 @@ module.exports = {
                 path: `${__dirname}/src/images`
             }
         },
+        {
+            resolve: 'gatsby-source-contentful',
+            options: {
+                spaceId: SPACE_ID,
+                accessToken: ACCESS_TOKEN
+            }
+        },
         `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
@@ -26,7 +42,7 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`
+                icon: `src/images/logo.png`
             }
         },
         {
@@ -52,6 +68,7 @@ module.exports = {
             }
         },
         `gatsby-plugin-sass`,
+        `gatsby-plugin-fontawesome-css`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-robots-txt`,

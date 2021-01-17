@@ -7,8 +7,15 @@ export default function NotFoundPage() {
     return (
         <Layout>
             <SEO title='404: Not found' />
-            <h1>404: Not Found</h1>
-            <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+            <div className='site-container not-found-page'>
+                <div className='container text-center'>
+                    <h1>NOT FOUND</h1>
+                    <p>
+                        You just hit a route that doesn&#39;t exist... the
+                        sadness.
+                    </p>
+                </div>
+            </div>
         </Layout>
     );
 }

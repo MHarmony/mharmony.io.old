@@ -1,19 +1,75 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Image from '../components/image';
 import SEO from '../components/seo';
+import Contact from '../components/contact';
+import Banner from '../components/banner';
 
-export default function IndexPage() {
+export default function IndexPage({ data }) {
     return (
-        <Layout>
-            <SEO title='Home' />
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-            <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-                <Image />
-            </div>
+        <Layout header='home'>
+            <SEO
+                title={data.contentfulAboutMe.designation}
+                keyworks={[
+                    `mharmony.io`,
+                    `Software Developer`,
+                    `mharmony`,
+                    `mharm0ny`,
+                    `Michael Harmon`,
+                    `Michael`,
+                    `Harmon`,
+                    `Developer`
+                ]}
+            />
+
+            <Banner data={data.contentfulAboutMe} />
+
+            {data.contentfulSiteInformation.menus
+                .filter(item => item === 'Contact')
+                .map(() => {
+                    return (
+                        <Contact
+                            key='Contact'
+                            formId={data.contentfulAboutMe.formspreeFormId}
+                        />
+                    );
+                })}
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query AboutQuery {
+        contentfulAboutMe {
+            name
+            designation
+            github
+            email
+            id
+            linkedin
+            twitter
+            formspreeFormId
+            description {
+                childMarkdownRemark {
+                    html
+                }
+            }
+            bannerImage {
+                fluid(maxWidth: 1500) {
+                    base64
+                    aspectRatio
+                    src
+                    srcSet
+                    srcWebp
+                    srcSetWebp
+                    sizes
+                }
+            }
+            bannerList
+        }
+        contentfulSiteInformation {
+            menus
+        }
+    }
+`;

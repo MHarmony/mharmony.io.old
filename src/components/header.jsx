@@ -69,6 +69,15 @@ export default class Header extends Component {
                                                 </li>
                                             );
                                         })}
+
+                                    <li key='Resume'>
+                                        <a
+                                            href={data.resume.file.url}
+                                            target='_blank'
+                                            rel='noopener noreferrer'>
+                                            Resume
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         ) : (

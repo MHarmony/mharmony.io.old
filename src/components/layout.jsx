@@ -27,6 +27,11 @@ export default function Layout({ children, header }) {
                     }
                 }
                 menus
+                resume {
+                    file {
+                        url
+                    }
+                }
             }
         }
     `);

@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
 @import './header';
 @import './footer';
 @import './banner';
+@import './contact';
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 img {
     max-width: 100%;
@@ -104,4 +110,22 @@ pre {
 
 .section-head {
     margin-bottom: 20px;
+}
+
+.line-heading,
+h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.line-heading:after,
+h2:after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    background: #ef5826;
+    top: 100%;
+    left: 0;
 }

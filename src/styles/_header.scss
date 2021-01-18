@@ -119,6 +119,7 @@
 
             .responsive-menu {
                 z-index: 9999;
+                cursor: pointer;
 
                 span {
                     background: transparent;
@@ -186,5 +187,6 @@
     .responsive-menu {
         display: flex;
         float: right;
+        cursor: pointer;
     }
 }

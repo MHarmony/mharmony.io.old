@@ -11,6 +11,10 @@ import '../styles/style.scss';
 
 library.add(fab);
 
+if (typeof window !== 'undefined') {
+    require('smooth-scroll')('a[href*="#"]');
+}
+
 export default function Layout({ children, header }) {
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {

@@ -26,7 +26,8 @@ export default function Banner(props) {
                             <a
                                 href={data.github}
                                 target='_blank'
-                                rel='noopener noreferrer'>
+                                rel='noopener noreferrer'
+                                aria-label='GitHub'>
                                 <FontAwesomeIcon icon={['fab', 'github']} />
                             </a>
                         </li>
@@ -35,7 +36,8 @@ export default function Banner(props) {
                             <a
                                 href={data.linkedin}
                                 target='_blank'
-                                rel='noopener noreferrer'>
+                                rel='noopener noreferrer'
+                                aria-label='LinkedIn'>
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
                             </a>
                         </li>
@@ -44,7 +46,8 @@ export default function Banner(props) {
                             <a
                                 href={data.twitter}
                                 target='_blank'
-                                rel='noopener noreferrer'>
+                                rel='noopener noreferrer'
+                                aria-label='Twitter'>
                                 <FontAwesomeIcon icon={['fab', 'twitter']} />
                             </a>
                         </li>

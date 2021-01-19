@@ -42,7 +42,10 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `src/images/logo.png`
+                icon: `src/images/logo.png`,
+                icon_options: {
+                    purpose: `any maskable`
+                }
             }
         },
         {

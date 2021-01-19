@@ -6,4 +6,8 @@ exports.onCreateWebpackConfig = ({ getConfig, stage }) => {
             'react-dom': '@hot-loader/react-dom'
         };
     }
+
+    actions.setWebpackConfig({
+        devtool: false
+    });
 };

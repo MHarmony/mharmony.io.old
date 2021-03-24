@@ -30,9 +30,9 @@ module.exports = {
                 accessToken: ACCESS_TOKEN
             }
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-transformer-remark`,
+        `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -48,20 +48,12 @@ module.exports = {
                 }
             }
         },
+        `gatsby-transformer-remark`,
         {
             resolve: `gatsby-plugin-nprogress`,
             options: {
                 color: `tomato`,
                 showSpinner: false
-            }
-        },
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: `UA-173971459-1`,
-                anonymize: true,
-                respectDNT: true,
-                cookieDomain: `mharmony.io`
             }
         },
         `gatsby-plugin-sass`,

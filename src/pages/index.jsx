@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Contact from '../components/contact';
 import Banner from '../components/banner';
+import Projects from '../components/projects';
 
 export default function IndexPage({ data }) {
     return (
@@ -24,6 +25,16 @@ export default function IndexPage({ data }) {
             />
 
             <Banner data={data.contentfulAboutMe} />
+
+            {data.contentfulSiteInformation.menus
+                .filter(item => item === 'Projects')
+                .map(t => {
+                    return (
+                        <Projects
+                            key='Projects'
+                            data={data.allContentfulProjects}></Projects>
+                    );
+                })}
 
             {data.contentfulSiteInformation.menus
                 .filter(item => item === 'Contact')
@@ -56,20 +67,23 @@ export const pageQuery = graphql`
                 }
             }
             bannerImage {
-                fluid(maxWidth: 1500) {
-                    base64
-                    aspectRatio
-                    src
-                    srcSet
-                    srcWebp
-                    srcSetWebp
-                    sizes
-                }
+                gatsbyImageData(placeholder: BLURRED)
             }
             bannerList
         }
         contentfulSiteInformation {
             menus
+        }
+        allContentfulProjects {
+            edges {
+                node {
+                    projectName
+                    url
+                    image {
+                        gatsbyImageData(placeholder: BLURRED)
+                    }
+                }
+            }
         }
     }
 `;

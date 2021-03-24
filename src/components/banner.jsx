@@ -1,16 +1,14 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Banner(props) {
     const { data } = props;
+    const image = getImage(data.bannerImage);
+
     return (
         <div className='banner'>
-            <Img
-                fluid={data.bannerImage.fluid}
-                objectFit='cover'
-                objectPosition='50% 50%'
-            />
+            <GatsbyImage image={image} alt={data.name} />
 
             <div className='container'>
                 <div className='banner-details'>

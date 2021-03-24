@@ -52,17 +52,17 @@ export default class Header extends Component {
                                     <li key='home'>
                                         <Link to='/#home'>Home</Link>
                                     </li>
-                                    {/* {data.menus
-                                        .filter(item => item === 'About')
+                                    {data.menus
+                                        .filter(item => item === 'Projects')
                                         .map(t => {
                                             return (
-                                                <li key='About'>
-                                                    <Link to={`/#About`}>
-                                                        About
+                                                <li key='Projects'>
+                                                    <Link to={`/#Projects`}>
+                                                        Projects
                                                     </Link>
                                                 </li>
                                             );
-                                        })} */}
+                                        })}
                                     {data.menus
                                         .filter(item => item === 'Contact')
                                         .map(t => {
@@ -74,7 +74,6 @@ export default class Header extends Component {
                                                 </li>
                                             );
                                         })}
-
                                     <li key='Resume'>
                                         <a
                                             href={data.resume.file.url}
@@ -96,6 +95,17 @@ export default class Header extends Component {
                                     <li key='home'>
                                         <Link to='/#home'>Home</Link>
                                     </li>
+                                    {data.menus
+                                        .filter(item => item === 'Projects')
+                                        .map(t => {
+                                            return (
+                                                <li key='projects'>
+                                                    <Link to={`/projects`}>
+                                                        Projects
+                                                    </Link>
+                                                </li>
+                                            );
+                                        })}
                                 </ul>
                             </div>
                         )}

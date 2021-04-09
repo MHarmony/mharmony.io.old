@@ -70,9 +70,15 @@ module.exports = {
             resolve: `gatsby-plugin-csp`,
             options: {
                 disableOnDev: true,
+                mergeScriptHashes: false,
+                mergeStyleHashes: false,
+                mergeDefaultDirectives: true,
                 directives: {
                     'font-src': "'self' data: https://fonts.gstatic.com",
-                    'img-src': "'self' data: https://images.ctfassets.net"
+                    'img-src': "'self' data: https://images.ctfassets.net",
+                    'style-src':
+                        "'self' 'unsafe-inline' https://fonts.googleapis.com",
+                    'script-src': "'self' 'unsafe-inline'"
                 }
             }
         },

@@ -62,7 +62,7 @@ module.exports = {
             resolve: `gatsby-plugin-netlify`,
             options: {
                 allPageHeaders: [
-                    "Content-Security-Policy: default-src 'self'",
+                    'Content-Security-Policy: default-src https:',
                     'Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()'
                 ]
             }

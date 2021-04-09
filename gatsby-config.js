@@ -63,7 +63,7 @@ module.exports = {
             options: {
                 allPageHeaders: [
                     'Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()',
-                    "Content-Security-Policy: default-src 'self'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.ctfassets.net; style-src: 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'"
+                    "Content-Security-Policy: default-src 'self'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.ctfassets.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'"
                 ]
             }
         },

@@ -72,8 +72,7 @@ module.exports = {
                 disableOnDev: true,
                 reportOnly: false,
                 directives: {
-                    'font-src': 'https://fonts.gstatic.co',
-                    'img-src': "'self' data:"
+                    'font-src': 'https://fonts.gstatic.com'
                 }
             }
         },

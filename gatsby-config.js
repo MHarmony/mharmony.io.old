@@ -62,7 +62,6 @@ module.exports = {
             resolve: `gatsby-plugin-netlify`,
             options: {
                 allPageHeaders: [
-                    "Content-Security-Policy: default-src mharmony.io *.ctfassets.net *.googleapis.com 'self'",
                     'Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()'
                 ]
             }

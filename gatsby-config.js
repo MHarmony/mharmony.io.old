@@ -70,9 +70,9 @@ module.exports = {
             resolve: `gatsby-plugin-csp`,
             options: {
                 disableOnDev: true,
-                reportOnly: false,
                 directives: {
-                    'font-src': 'https://fonts.gstatic.com'
+                    'font-src': "'self' data: https://fonts.gstatic.com",
+                    'img-src': "'self' data: https://images.ctfassets.net"
                 }
             }
         },

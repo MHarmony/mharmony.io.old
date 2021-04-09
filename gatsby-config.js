@@ -66,6 +66,17 @@ module.exports = {
                 ]
             }
         },
+        {
+            resolve: `gatsby-plugin-csp`,
+            options: {
+                disableOnDev: true,
+                reportOnly: false,
+                directives: {
+                    'font-src': 'https://fonts.gstatic.co',
+                    'img-src': "'self' data:"
+                }
+            }
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-robots-txt`,
         `gatsby-plugin-sitemap`,

@@ -58,11 +58,18 @@ module.exports = {
         },
         `gatsby-plugin-sass`,
         `gatsby-plugin-fontawesome-css`,
-        `gatsby-plugin-netlify`,
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+                allPageHeaders: [
+                    "Content-Security-Policy: default-src 'self'",
+                    'Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()'
+                ]
+            }
+        },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-robots-txt`,
         `gatsby-plugin-sitemap`,
-        `gatsby-plugin-offline`,
-        `gatsby-plugin-no-sourcemaps`
+        `gatsby-plugin-offline`
     ]
 };

@@ -63,8 +63,10 @@ module.exports = {
             options: {
                 allPageHeaders: [
                     'Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()',
-                    "Content-Security-Policy: default-src 'self'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.ctfassets.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'",
-                    'Expect-CT: enforce, max-age=43200, report-uri="https://mharmony.io/report'
+                    "Content-Security-Policy: default-src 'self'; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://images.ctfassets.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; report-uri https://mharmony.report-uri.com/r/d/csp/enforce",
+                    'Expect-CT: enforce, max-age=43200, report-uri="https://mharmony.report-uri.com/r/d/ct/enforce"',
+                    'Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://mharmony.report-uri.com/a/d/g"}],"include_subdomains":true}',
+                    'NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}'
                 ]
             }
         },

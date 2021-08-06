@@ -39,16 +39,6 @@ export default function Banner(props) {
                                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
                             </a>
                         </li>
-
-                        <li>
-                            <a
-                                href={data.twitter}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                aria-label='Twitter'>
-                                <FontAwesomeIcon icon={['fab', 'twitter']} />
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

@@ -59,7 +59,6 @@ export const pageQuery = graphql`
             email
             id
             linkedin
-            twitter
             formspreeFormId
             description {
                 childMarkdownRemark {

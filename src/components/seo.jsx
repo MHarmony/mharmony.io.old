@@ -9,7 +9,6 @@ export default function SEO({ description, lang, meta, keywords, title }) {
             contentfulSiteInformation {
                 siteName
                 siteDescription
-                twitterHandle
             }
         }
     `);
@@ -37,22 +36,6 @@ export default function SEO({ description, lang, meta, keywords, title }) {
                 {
                     property: `og:type`,
                     content: `website`
-                },
-                {
-                    name: `twitter:card`,
-                    content: `summary`
-                },
-                {
-                    name: `twitter:creator`,
-                    content: data.contentfulSiteInformation.twiteerHandle
-                },
-                {
-                    name: `twitter:title`,
-                    content: title
-                },
-                {
-                    name: `twitter:description`,
-                    content: data.contentfulSiteInformation.siteDescription
                 }
             ]
                 .concat(

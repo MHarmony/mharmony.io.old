@@ -71,3 +71,6 @@ yarn-error.log
 .vscode/
 # Local Netlify folder
 .netlify
+
+# Package lock
+package-lock.json

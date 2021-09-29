@@ -40,10 +40,10 @@
   "devDependencies": {
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
-    "netlify-cli": "^6.9.17",
+    "netlify-cli": "^6.9.24",
     "npm-check-updates": "^11.8.5",
     "prettier": "2.4.1",
-    "snyk": "^1.720.0"
+    "snyk": "^1.727.0"
   },
   "keywords": [
     "mharmony"

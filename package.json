@@ -10,10 +10,10 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
-    "axios": "^0.21.4",
+    "axios": "^0.22.0",
     "bootstrap": "^5.1.1",
     "dotenv": "^10.0.0",
-    "gatsby": "3.14.0",
+    "gatsby": "3.14.1",
     "gatsby-plugin-catch-links": "^3.14.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-image": "^1.14.0",
@@ -40,10 +40,10 @@
   "devDependencies": {
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
-    "netlify-cli": "^6.9.24",
+    "netlify-cli": "^6.9.28",
     "npm-check-updates": "^11.8.5",
     "prettier": "2.4.1",
-    "snyk": "^1.727.0"
+    "snyk": "^1.729.0"
   },
   "keywords": [
     "mharmony"

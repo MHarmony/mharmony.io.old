@@ -57,7 +57,6 @@ module.exports = {
             }
         },
         `gatsby-plugin-sass`,
-        `gatsby-plugin-fontawesome-css`,
         {
             resolve: `gatsby-plugin-netlify`,
             options: {

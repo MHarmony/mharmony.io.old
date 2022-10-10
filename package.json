@@ -10,10 +10,10 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^0.27.2",
-    "bootstrap": "^5.2.1",
+    "axios": "^1.1.2",
+    "bootstrap": "^5.2.2",
     "dotenv": "^16.0.3",
-    "gatsby": "4.24.1",
+    "gatsby": "4.24.3",
     "gatsby-plugin-catch-links": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
@@ -39,10 +39,10 @@
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "netlify-cli": "^12.0.2",
-    "npm-check-updates": "^16.3.4",
+    "netlify-cli": "^12.0.7",
+    "npm-check-updates": "^16.3.11",
     "prettier": "2.7.1",
-    "snyk": "^1.1019.0",
+    "snyk": "^1.1025.0",
     "semantic-release": "^19.0.5"
   },
   "keywords": [
